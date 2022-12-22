@@ -15,18 +15,6 @@
 		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>kat-5444216926883661276.groovy</name>
-			<type>1</type>
-			<location>C:/Users/WEDOQA~1/AppData/Local/Temp/Katalon/Web Services/kat-5444216926883661276.groovy</location>
-		</link>
-		<link>
-			<name>kat-8001628750368926997.groovy</name>
-			<type>1</type>
-			<location>C:/Users/WEDOQA~1/AppData/Local/Temp/Katalon/Web Services/kat-8001628750368926997.groovy</location>
-		</link>
-	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1671708792142</id>
