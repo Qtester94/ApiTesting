@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="APITest" time="2.72" tests="3" failures="0" errors="0">
+   <testsuite name="APITest" tests="3" failures="0" errors="0" time="2.72" skipped="0" timestamp="2022-12-22 13:22:44" hostname="WeDoQA-ThinkPad-Man7 - Daniels-Thinkpad" id="Test Suites/APITest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\WeDoQA-ThinkPad-Man7\\git\\ApiTesting\\Reports\\20221222_132237\\APITest\\20221222_132238"/>
+         <property name="logFiles" value="C:\\Users\\WeDoQA-ThinkPad-Man7\\git\\ApiTesting\\Reports\\20221222_132237\\APITest\\20221222_132238\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="WeDoQA-ThinkPad-Man7 - Daniels-Thinkpad"/>
+         <property name="hostAddress" value="192.168.0.111"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.5.1.208"/>
+      </properties>
+      <testcase name="Test Cases/GetUserDetails" time="1.734" classname="Test Cases/GetUserDetails" status="PASSED">
+         <system-out><![CDATA[2022-12-22 13:22:44 - [TEST_CASE][PASSED] - Test Cases/GetUserDetails: Test Cases/GetUserDetails
+
+2022-12-22 13:22:45 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("API/GetUserDetails")): Send request successfully
+
+2022-12-22 13:22:46 - [MESSAGE][INFO] - HAR: C:\Users\WeDoQA-ThinkPad-Man7\git\ApiTesting\Reports\20221222_132237\APITest\20221222_132238\requests\main\0.har
+
+2022-12-22 13:22:46 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-22 13:22:46 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-12-22 13:22:46 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-22 13:22:46 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.first_name", "Janet"): Verify element property value successfully
+
+2022-12-22 13:22:46 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-12-22 13:22:46 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.last_name", "Weaver"): Verify element property value successfully
+
+2022-12-22 13:22:46 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/LogIn" time="0.368" classname="Test Cases/LogIn" status="PASSED">
+         <system-out><![CDATA[2022-12-22 13:22:46 - [TEST_CASE][PASSED] - Test Cases/LogIn: Test Cases/LogIn
+
+2022-12-22 13:22:46 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("API/Login")): Send request successfully
+
+2022-12-22 13:22:46 - [MESSAGE][INFO] - HAR: C:\Users\WeDoQA-ThinkPad-Man7\git\ApiTesting\Reports\20221222_132237\APITest\20221222_132238\requests\main\1.har
+
+2022-12-22 13:22:46 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-22 13:22:46 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-12-22 13:22:46 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UnSuccessfulLogin" time="0.402" classname="Test Cases/UnSuccessfulLogin" status="PASSED">
+         <system-out><![CDATA[2022-12-22 13:22:46 - [TEST_CASE][PASSED] - Test Cases/UnSuccessfulLogin: Test Cases/UnSuccessfulLogin
+
+2022-12-22 13:22:47 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("API/UnSuccessfulLogIN")): Send request successfully
+
+2022-12-22 13:22:47 - [MESSAGE][INFO] - HAR: C:\Users\WeDoQA-ThinkPad-Man7\git\ApiTesting\Reports\20221222_132237\APITest\20221222_132238\requests\main\2.har
+
+2022-12-22 13:22:47 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-22 13:22:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 400): Verify response status code successfully
+
+2022-12-22 13:22:47 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-22 13:22:47 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error", "Missing password"): Verify element property value successfully
+
+2022-12-22 13:22:47 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-12-22 13:22:44 - [TEST_SUITE][PASSED] - APITest: Test Cases/UnSuccessfulLogin]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
