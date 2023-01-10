@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+APITest,,,,2023-01-09 07:40:44,2023-01-09 07:40:49,4.403s,PASSED
+,,,,,,,
+Test Cases/GetUserDetails,,,,2023-01-09 07:40:45,2023-01-09 07:40:48,3.342s,PASSED
+"response = sendRequest(findTestObject(""API/GetUserDetails""))",,,,2023-01-09 07:40:45,2023-01-09 07:40:48,2.981s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-01-09 07:40:48,2023-01-09 07:40:48,0.014s,PASSED
+"verifyElementPropertyValue(response, ""data.first_name"", ""Janet"")",,,,2023-01-09 07:40:48,2023-01-09 07:40:48,0.045s,PASSED
+"verifyElementPropertyValue(response, ""data.last_name"", ""Weaver"")",,,,2023-01-09 07:40:48,2023-01-09 07:40:48,0.018s,PASSED
+,,,,,,,
+Test Cases/LogIn,,,,2023-01-09 07:40:48,2023-01-09 07:40:48,0.406s,PASSED
+"response = sendRequest(findTestObject(""API/Login""))",,,,2023-01-09 07:40:48,2023-01-09 07:40:48,0.195s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-01-09 07:40:48,2023-01-09 07:40:48,0.003s,PASSED
+,,,,,,,
+Test Cases/UnSuccessfulLogin,,,,2023-01-09 07:40:48,2023-01-09 07:40:49,0.425s,PASSED
+"response = sendRequest(findTestObject(""API/UnSuccessfulLogIN""))",,,,2023-01-09 07:40:48,2023-01-09 07:40:49,0.221s,PASSED
+"verifyResponseStatusCode(response, 400)",,,,2023-01-09 07:40:49,2023-01-09 07:40:49,0.002s,PASSED
+"verifyElementPropertyValue(response, ""error"", ""Missing password"")",,,,2023-01-09 07:40:49,2023-01-09 07:40:49,0.016s,PASSED
